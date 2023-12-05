@@ -19,8 +19,8 @@ function NavBar() {
             alt="logo"
           />
         </div>
-        <div className={styles.boxAviso}>
-          <p>Pide tu cena navideña</p>
+        <div className={styles.boxAviso} onClick={() => router.push("/chefs")}>
+          <p>Chef's disponibles</p>
           <div className={styles.BoxArrow}>
             <IoIosArrowRoundForward />
           </div>
