@@ -1,95 +1,150 @@
-import Image from 'next/image'
-import styles from './page.module.css'
+"use client";
 
-export default function Home() {
+import React from "react";
+import styles from "./page.module.css";
+import Image from "next/image";
+
+import ilustrationHS from "@/assets/undraw_Having_fun_re_vj4h.png";
+import logoApp from "@/assets/logoAppFont.png";
+
+import { IoIosArrowRoundForward } from "react-icons/io";
+import { GiChefToque } from "react-icons/gi";
+import { BsFillHouseFill } from "react-icons/bs";
+import { AiFillStar } from "react-icons/ai";
+import { useRouter } from "next/navigation";
+import iconChefMes from "@/assets/sombrero-de-cocinero.png";
+import imgChef from "@/assets/imgChef.jpg";
+import Avatar from "react-avatar";
+import AutoSliderLeft from "@/components/slides-auto/Slide";
+import Footer from "@/components/footer";
+import NavBar from "@/components/navbar/NavBar";
+
+function HomePage() {
+  const router = useRouter();
   return (
-    <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>src/app/page.tsx</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+    <>
+      <NavBar />
+
+      <main className={styles.heroin_section}>
+        <div className={styles.boxInfo}>
+          <div className={styles.subBoxInfo}>
+            <div className={styles.bigLogo}>
+              <Image className={styles.imageLogo} src={logoApp} alt="logo" />
+            </div>
+
+            <h1 className={styles.headline}>
+              RELAJATE Y CELEBRA: ¡NOSOTROS COCINAMOS POR TI!
+            </h1>
+
+            <div className={styles.characters}>
+              <div className={styles.subCharacters}>
+                <div className={styles.chrCard}>
+                  <div className={styles.subChrCard}>
+                    <div className={styles.imgChr}>
+                      <GiChefToque className={styles.iconChrcard} size={20} />
+                    </div>
+                    <p>Chefs Profesionales</p>
+                  </div>
+                </div>
+                <div className={styles.chrCard}>
+                  <div className={styles.subChrCard}>
+                    <div className={styles.imgChr}>
+                      <AiFillStar className={styles.iconChrcard} size={20} />
+                    </div>
+                    <p>Excelente Calidad</p>
+                  </div>
+                </div>
+                <div className={styles.chrCard}>
+                  <div className={styles.subChrCard}>
+                    <div className={styles.imgChr}>
+                      <BsFillHouseFill
+                        className={styles.iconChrcard}
+                        size={20}
+                      />
+                    </div>
+                    <p>A Domicilio</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className={styles.boxBtnOrder}>
+              <div
+                className={styles.btnOrder}
+                onClick={() => router.push("/order")}
+              >
+                <div className={styles.subBtnOrder}>
+                  <p>Ordenar</p>
+                  <div className={styles.iconBtnOrder}>
+                    <IoIosArrowRoundForward />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
 
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
+        <div className={styles.boxImage}>
+          <Image
+            className={styles.iconIlus}
+            src={ilustrationHS}
+            alt="ilustration"
+          />
+        </div>
+      </main>
 
-      <div className={styles.grid}>
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
+      <main className={styles.presentationSection}>
+        <div className={styles.topBanner}>
+          <div className={styles.subTopBanner}>
+            <div className={styles.FirstPartBanner}>
+              <div className={styles.imgBanner}>
+                <Image
+                  className={styles.iconBanner}
+                  src={iconChefMes}
+                  alt="iconChef"
+                />
+              </div>
+              <h1 className={styles.bannerMessage}>
+                CHEF ESTRELLA DE ESTA TEMPORADA
+              </h1>
+            </div>
 
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Learn <span>-&gt;</span>
-          </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
-        </a>
+            <div className={styles.boxPresentationChef}>
+              <div className={styles.subPreChef}>
+                <div className={styles.imgChef}>
+                  <Avatar src={imgChef.src} size="80" round={true} />
+                </div>
+                <div className={styles.boxInfoChef}>
+                  <div className={styles.subInfoChef}>
+                    <h3>Sebastian Cuellar</h3>
+                    <p>Chef Profesional</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className={styles.boxCarrousel}>
+          <AutoSliderLeft />
+        </div>
+        <div className={styles.boxBtnOrder}>
+          <div
+            className={styles.btnOrder}
+            onClick={() => router.push("/order")}
+          >
+            <div className={styles.subBtnOrder}>
+              <p>Ver Cenas</p>
+              <div className={styles.iconBtnOrder}>
+                <IoIosArrowRoundForward />
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
 
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p>Explore starter templates for Next.js.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
-  )
+      <Footer />
+    </>
+  );
 }
+
+export default HomePage;

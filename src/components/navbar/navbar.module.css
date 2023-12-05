@@ -1,0 +1,36 @@
+.nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.boxIconLogo {
+    display: grid;
+    place-content: center;
+}
+
+.iconLogo {
+    width: 200px;
+    height: auto;
+    cursor: pointer;
+}
+
+.boxAviso {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    cursor: pointer;
+    background: #eeee;
+    padding: 10px;
+    border-radius: 1em;
+}
+
+.boxAviso p {
+    display: grid;
+    place-content: center;
+}
+
+.BoxArrow {
+    display: grid;
+    place-content: center;
+}

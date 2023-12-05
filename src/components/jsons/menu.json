@@ -1,0 +1,102 @@
+{
+    "platos": [
+        {
+            "id": 1,
+            "categoria": "Carnes",
+            "menu": [
+                {
+                    "id": 1,
+                    "image": "lomo_cerdo.jpg",
+                    "name": "Exquisito Lomo de Cerdo",
+                    "description": "Disfruta de nuestro lomo de cerdo, cuidadosamente horneado con sal de rutas de especias y realzado por una irresistible salsa de piña y romero. Una elección segura para deleitar tu paladar.",
+                    "scope": 10,
+                    "price": 270000
+                },
+                {
+                    "id": 2,
+                    "image": "pechuga_de_pavo_relleno.jpg",
+                    "name": "Pechuga de Pavo Relleno",
+                    "description": "Nuestra pechuga de pavo rellena con manzana y almendras, glaseada con mantequilla y acompañada de una deliciosa salsa de frutos rojos, es una experiencia única.",
+                    "scope": 10,
+                    "price": 300000
+                },
+                {
+                    "id": 3,
+                    "image": "pollo_campo_relleno.jpg",
+                    "name": "Pollo Campesino Relleno",
+                    "description": "Déjate seducir por nuestro pollo campesino relleno, con vegetales asados, elaborada con mantequilla orgánica de Silvia Cauca. Una combinación auténtica de sabores locales para conquistar tu paladar.",
+                    "scope": 10,
+                    "price": 180000
+                },
+                {
+                    "id": 4,
+                    "image": "roast_beef.jpg",
+                    "name": "Roast Beef",
+                    "description": "Sumérgete en la experiencia de nuestro Roast Beef, preparado en salmuera con una mezcla de especias y horneado según tu preferencia. Acompañado de una exquisita salsa de ciruelas para garantizar una satisfacción total.",
+                    "scope": 10,
+                    "price": 280000
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "categoria": "Guarniciones",
+            "menu": [
+                {
+                    "id": 1,
+                    "image": "ensalada_rusa.jpg",
+                    "name": "Ensalada Rusa",
+                    "description": "Nuestra ensalada rusa, con arvejas y zanahoria en cubos, alioli de ajo, es la opción confiable para acompañar tus platos principales. Una explosión de sabores que garantiza satisfacción en cada bocado.",
+                    "scope": 5,
+                    "price": 47000
+                },
+                {
+                    "id": 2,
+                    "image": "arroz_al_curry.jpg",
+                    "name": "Arroz al Curry",
+                    "description": "El arroz al curry, con un toque de limón, es la guarnición perfecta que brinda confianza en cada porción. Acompaña tu comida principal con este delicioso complemento.",
+                    "scope": 5,
+                    "price": 47000
+                },
+                {
+                    "id": 3,
+                    "image": "ensalada_de_col.jpg",
+                    "name": "Ensalada de Col",
+                    "description": "Nuestra ensalada de col, con zanahoria, crema, almendras, piña y pasas, te ofrece una experiencia confiable y deliciosa. Una combinación única que no querrás dejar de probar.",
+                    "scope": 5,
+                    "price": 47000
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "categoria": "Postres",
+            "menu": [
+                {
+                    "id": 1,
+                    "image": "pane_ton.jpg",
+                    "name": "Pannetone Horneado con Receta Casera",
+                    "description": "Nuestro Pannetone horneado con receta casera es la elección confiable para satisfacer tu dulce antojo. Su esponjosidad y sabor incomparables te aseguran un final perfecto para tu comida.",
+                    "scope": 10,
+                    "price": 35000
+                },
+                {
+                    "id": 2,
+                    "image": "merengon_suizo.jpg",
+                    "name": "Merengón Suizo",
+                    "description": "Con una textura crujiente por fuera y suave por dentro, nuestro merengón suizo es la opción confiable para los amantes del dulce. Deleita tu paladar con este postre exquisito.",
+                    "scope": 10,
+                    "price": 48000
+                },
+                {
+                    "id": 3,
+                    "image": "Torta_naranja.jpg",
+                    "name": "Torta de Naranja y Chía con Glaseado de Frutos Rojos",
+                    "description": "Experimenta la perfección en cada capa con nuestra torta de naranja y chía. Su glaseado de frutos rojos complementa la experiencia para una satisfacción confiable.",
+                    "scope": 10,
+                    "price": 55000
+                }
+            ]
+        }
+    ]
+}
