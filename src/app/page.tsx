@@ -7,6 +7,7 @@ import Image from "next/image";
 import ilustrationHS from "@/assets/undraw_Having_fun_re_vj4h.png";
 import logoApp from "@/assets/logoAppFont.png";
 
+
 import { IoIosArrowRoundForward } from "react-icons/io";
 import { GiChefToque } from "react-icons/gi";
 import { BsFillHouseFill } from "react-icons/bs";
@@ -18,19 +19,25 @@ import Avatar from "react-avatar";
 import AutoSliderLeft from "@/components/slides-auto/Slide";
 import Footer from "@/components/footer";
 import NavBar from "@/components/navbar/NavBar";
+import Warning from "@/components/bannerWarning/Warning";
+
+import { useMediaQuery } from "react-responsive";
 
 function HomePage() {
   const router = useRouter();
+  const imgTrans = useMediaQuery({ query: "(min-width: 800px)" });
   return (
     <>
+      <Warning />
       <NavBar />
-
       <main className={styles.heroin_section}>
         <div className={styles.boxInfo}>
           <div className={styles.subBoxInfo}>
-            <div className={styles.bigLogo}>
-              <Image className={styles.imageLogo} src={logoApp} alt="logo" />
-            </div>
+            {imgTrans && (
+              <div className={styles.bigLogo}>
+                <Image className={styles.imageLogo} src={logoApp} alt="logo" />
+              </div>
+            )}
 
             <h1 className={styles.headline}>
               RELAJATE Y CELEBRA: ¡NOSOTROS COCINAMOS POR TI!
@@ -62,7 +69,7 @@ function HomePage() {
                         size={20}
                       />
                     </div>
-                    <p>A Domicilio</p>
+                    <p>Totalmente a Domicilio</p>
                   </div>
                 </div>
               </div>

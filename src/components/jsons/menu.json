@@ -10,7 +10,9 @@
                     "name": "Exquisito Lomo de Cerdo",
                     "description": "Disfruta de nuestro lomo de cerdo, cuidadosamente horneado con sal de rutas de especias y realzado por una irresistible salsa de piña y romero. Una elección segura para deleitar tu paladar.",
                     "scope": 10,
-                    "price": 270000
+                    "price": 270000,
+                    "priceDiscount": 243000,
+                    "linkProduct": "https://wa.me/p/7060772984042089/573215068224"
                 },
                 {
                     "id": 2,
@@ -18,7 +20,9 @@
                     "name": "Pechuga de Pavo Relleno",
                     "description": "Nuestra pechuga de pavo rellena con manzana y almendras, glaseada con mantequilla y acompañada de una deliciosa salsa de frutos rojos, es una experiencia única.",
                     "scope": 10,
-                    "price": 300000
+                    "price": 300000,
+                    "priceDiscount": 270000,
+                    "linkProduct": "https://wa.me/p/6744056812373087/573215068224"
                 },
                 {
                     "id": 3,
@@ -26,7 +30,9 @@
                     "name": "Pollo Campesino Relleno",
                     "description": "Déjate seducir por nuestro pollo campesino relleno, con vegetales asados, elaborada con mantequilla orgánica de Silvia Cauca. Una combinación auténtica de sabores locales para conquistar tu paladar.",
                     "scope": 10,
-                    "price": 180000
+                    "price": 180000,
+                    "priceDiscount": 162000,
+                    "linkProduct": "https://wa.me/p/7133086990059594/573215068224"
                 },
                 {
                     "id": 4,
@@ -34,7 +40,9 @@
                     "name": "Roast Beef",
                     "description": "Sumérgete en la experiencia de nuestro Roast Beef, preparado en salmuera con una mezcla de especias y horneado según tu preferencia. Acompañado de una exquisita salsa de ciruelas para garantizar una satisfacción total.",
                     "scope": 10,
-                    "price": 280000
+                    "price": 280000,
+                    "priceDiscount": 252000,
+                    "linkProduct": "https://wa.me/p/7136789073010225/573215068224"
                 }
             ]
         },
@@ -48,7 +56,9 @@
                     "name": "Ensalada Rusa",
                     "description": "Nuestra ensalada rusa, con arvejas y zanahoria en cubos, alioli de ajo, es la opción confiable para acompañar tus platos principales. Una explosión de sabores que garantiza satisfacción en cada bocado.",
                     "scope": 5,
-                    "price": 47000
+                    "price": 47000,
+                    "priceDiscount": 42300,
+                    "linkProduct": "https://wa.me/p/6850070988409413/573215068224"
                 },
                 {
                     "id": 2,
@@ -56,7 +66,9 @@
                     "name": "Arroz al Curry",
                     "description": "El arroz al curry, con un toque de limón, es la guarnición perfecta que brinda confianza en cada porción. Acompaña tu comida principal con este delicioso complemento.",
                     "scope": 5,
-                    "price": 47000
+                    "price": 47000,
+                    "priceDiscount": 42300,
+                    "linkProduct": "https://wa.me/p/6548166055294881/573215068224"
                 },
                 {
                     "id": 3,
@@ -64,7 +76,9 @@
                     "name": "Ensalada de Col",
                     "description": "Nuestra ensalada de col, con zanahoria, crema, almendras, piña y pasas, te ofrece una experiencia confiable y deliciosa. Una combinación única que no querrás dejar de probar.",
                     "scope": 5,
-                    "price": 47000
+                    "price": 47000,
+                    "priceDiscount": 42300,
+                    "linkProduct": "https://wa.me/p/7005426276204993/573215068224"
                 }
             ]
         },
@@ -78,7 +92,9 @@
                     "name": "Pannetone Horneado con Receta Casera",
                     "description": "Nuestro Pannetone horneado con receta casera es la elección confiable para satisfacer tu dulce antojo. Su esponjosidad y sabor incomparables te aseguran un final perfecto para tu comida.",
                     "scope": 10,
-                    "price": 35000
+                    "price": 35000,
+                    "priceDiscount": 31500,
+                    "linkProduct": "https://wa.me/p/6767425789977575/573215068224"
                 },
                 {
                     "id": 2,
@@ -86,7 +102,9 @@
                     "name": "Merengón Suizo",
                     "description": "Con una textura crujiente por fuera y suave por dentro, nuestro merengón suizo es la opción confiable para los amantes del dulce. Deleita tu paladar con este postre exquisito.",
                     "scope": 10,
-                    "price": 48000
+                    "price": 48000,
+                    "priceDiscount": 43200,
+                    "linkProduct": "https://wa.me/p/6347497465352204/573215068224"
                 },
                 {
                     "id": 3,
@@ -94,7 +112,9 @@
                     "name": "Torta de Naranja y Chía con Glaseado de Frutos Rojos",
                     "description": "Experimenta la perfección en cada capa con nuestra torta de naranja y chía. Su glaseado de frutos rojos complementa la experiencia para una satisfacción confiable.",
                     "scope": 10,
-                    "price": 55000
+                    "price": 55000,
+                    "priceDiscount": 49500,
+                    "linkProduct": "https://wa.me/p/6693346154095167/573215068224"
                 }
             ]
         }

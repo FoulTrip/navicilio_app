@@ -1,5 +1,6 @@
 import { FC } from "react";
 import styles from "./carnes.module.css";
+import { useRouter } from "next/navigation";
 
 interface CardProps {
   name: string;
@@ -7,15 +8,33 @@ interface CardProps {
   description?: string;
   scope?: number;
   price?: number;
+  linkProduct: string;
+  discount: number | null;
 }
 
-const Card: FC<CardProps> = ({ name, image, description, scope, price }) => {
+const Card: FC<CardProps> = ({
+  name,
+  image,
+  description,
+  scope,
+  price,
+  discount,
+  linkProduct,
+}) => {
+  const router = useRouter();
 
-    const formattedPrice = price?.toLocaleString("es-CO", {
-        style: "currency",
-        currency: "COP",
-        minimumFractionDigits: 0,
-    })
+  const formattedNormalPrice = price?.toLocaleString("es-CO", {
+    style: "currency",
+    currency: "COP",
+    minimumFractionDigits: 0,
+  });
+
+  const formattedDiscountPrice = discount?.toLocaleString("es-CO", {
+    style: "currency",
+    currency: "COP",
+    minimumFractionDigits: 0,
+  });
+
   return (
     <div className={styles.card}>
       <img
@@ -29,9 +48,27 @@ const Card: FC<CardProps> = ({ name, image, description, scope, price }) => {
         Alcance: <span className={styles.value}>{scope} porciones</span>
       </p>
       <p className={styles.subTitle}>
-        Precio: <span className={styles.value}>{formattedPrice}</span>
+        Precio:{" "}
+        <span
+          className={
+            discount != null
+              ? `${styles.value} ${styles.strikeThrough}`
+              : `${styles.value}`
+          }
+        >
+          {formattedNormalPrice}
+        </span>
       </p>
-      <div className={styles.orderBtnWht}>
+      {discount == null ? null : (
+        <p className={styles.subTitle}>
+          Precio actual:
+          <span className={styles.value}>{formattedDiscountPrice}</span>
+        </p>
+      )}
+      <div
+        onClick={() => router.push(linkProduct)}
+        className={styles.orderBtnWht}
+      >
         <p className={styles.realBtn}>Ordenar</p>
       </div>
     </div>

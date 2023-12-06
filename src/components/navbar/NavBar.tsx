@@ -3,8 +3,10 @@ import React from "react";
 import styles from "./navbar.module.css";
 
 import logoApp from "@/assets/logoAppFont.png";
-import { IoIosArrowRoundForward } from "react-icons/io";
+import { FaInstagram, FaFacebook } from "react-icons/fa";
+
 import { useRouter } from "next/navigation";
+import Link from "next/link";
 
 function NavBar() {
   const router = useRouter();
@@ -19,11 +21,20 @@ function NavBar() {
             alt="logo"
           />
         </div>
-        <div className={styles.boxAviso} onClick={() => router.push("/chefs")}>
-          <p>Chef's disponibles</p>
-          <div className={styles.BoxArrow}>
-            <IoIosArrowRoundForward />
-          </div>
+        <div className={styles.boxAviso}>
+          <p>Siguenos</p>
+          <Link
+            className={styles.linkSocial}
+            href=""
+          >
+            <FaInstagram size={20} />
+          </Link>
+          <Link
+            className={styles.linkSocial}
+            href="https://www.facebook.com/profile.php?id=61554268893495&mibextid=ZbWKwL"
+          >
+            <FaFacebook size={20} />
+          </Link>
         </div>
       </nav>
     </>

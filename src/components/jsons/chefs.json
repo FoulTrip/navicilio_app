@@ -1,0 +1,44 @@
+{
+    "chefs": [
+        {
+            "id": 1,
+            "name": "Sebastian Cuellar",
+            "achievements": {
+                "status": "Disponible",
+                "ranking": "Destacado"
+            },
+            "bio": "El Chef Sebastian Cuellar ha llevado su amor por la gastronomía a nuevas alturas. Apasionado y dedicado, busca constantemente innovar y elevar la experiencia gastronómica a través de sabores cautivadores y presentaciones artísticas.",
+            "specialties": [
+                "Cocina de autor",
+                "Fusión internacional"
+            ],
+            "awards": [
+                {
+                    "year": 2018,
+                    "award": "Mejor Chef del Año",
+                    "organization": "Asociación Gastronómica Internacional"
+                },
+                {
+                    "year": 2020,
+                    "award": "Platillo Innovador",
+                    "organization": "Festival Gastronómico Creativo"
+                }
+            ],
+            "signature_dishes": [
+                {
+                    "name": "Risotto de Trufa Negra",
+                    "description": "Un exquisito risotto cremoso preparado con trufa negra fresca, perfectamente equilibrado con sabores intensos y texturas sorprendentes."
+                },
+                {
+                    "name": "Salmón Glaseado a la Naranja",
+                    "description": "Salmón de primera calidad glaseado con una irresistible salsa a base de naranja y hierbas frescas, una explosión de sabores en cada bocado."
+                }
+            ],
+            "social_media": {
+                "instagram": "@chefsebastian",
+                "twitter": "@sebculinaryartist",
+                "website": "www.sebastianculinary.com"
+            }
+        }
+    ]
+}

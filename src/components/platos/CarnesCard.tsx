@@ -2,7 +2,6 @@ import { FC } from "react";
 import menuData from "@/components/jsons/menu.json";
 import Card from "./CardModel";
 import styles from "./carnes.module.css";
-import Footer from "@/components/footer";
 
 const MenuComponent = () => {
   return (
@@ -17,13 +16,11 @@ const MenuComponent = () => {
                   key={menuItem.id}
                   name={menuItem.name}
                   image={menuItem.image}
-                  description={(menuItem as any).description}
-                  scope={(menuItem as any).scope}
-                  price={
-                    (menuItem as any).price ||
-                    (menuItem as any).price_10_15 ||
-                    (menuItem as any).price_libra
-                  }
+                  description={menuItem.description}
+                  scope={menuItem.scope}
+                  price={menuItem.price}
+                  discount={menuItem.priceDiscount}
+                  linkProduct={menuItem.linkProduct}
                 />
               ))}
             </div>

@@ -1,0 +1,62 @@
+.mainChefs {
+    min-height: 100vh;
+}
+
+.baseCard {
+    background: #afd97d;
+    border-radius: 1em;
+    padding: 20px;
+}
+
+.barStatus {
+    width: 100%;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin-bottom: 1em;
+}
+
+.boxActiveChef {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+
+.iconStatus {
+    display: grid;
+    place-content: center;
+}
+
+.iconCorona {
+    color: #ffee00;
+}
+
+.iconPoint {
+    color: #f8ffc1;
+}
+
+.infoChef {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+    gap: 10px;
+}
+
+.avatarChef {
+    display: grid;
+    place-content: center;
+}
+
+.nameChef {
+    width: 100%;
+    text-align: center;
+    font-size: 30px;
+    display: grid;
+    place-content: center;
+}
+
+.biografy {
+    display: grid;
+    place-content: center;
+    text-align: center;
+}

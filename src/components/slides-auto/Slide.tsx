@@ -15,7 +15,7 @@ import img08 from "@/assets/slideBanner/04.jpg";
 function AutoSliderLeft() {
   return (
     <>
-      <div>
+      <div className={styles.mainProncipal}>
         <div className={styles.slider}>
           <div className={styles.slide_track}>
             <div className={styles.slide}>

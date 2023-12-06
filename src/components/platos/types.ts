@@ -11,8 +11,7 @@ export interface Menu {
   description?: string;
   scope?: number;
   price?: number;
-  price_10_15?: number;
-  price_libra?: number;
+  link?: string;
 }
 
 export interface MenuData {
