@@ -33,3 +33,30 @@
     cursor: pointer;
     color: #9d6623;
 }
+
+.BarSeccion {
+  display: grid;
+  place-content: center;
+  margin-bottom: 1em;
+}
+
+.subBarSeccion {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.btnOption {
+  background: red;
+  padding: 10px;
+  border-radius: 1em;
+  cursor: pointer;
+}
+
+.desactive {
+  background: #eeee;
+}
+
+.active {
+  background: #fff;
+}

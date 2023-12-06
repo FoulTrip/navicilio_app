@@ -48,7 +48,7 @@ const Card: FC<CardProps> = ({
         Alcance: <span className={styles.value}>{scope} porciones</span>
       </p>
       <p className={styles.subTitle}>
-        Precio:{" "}
+        Precio:
         <span
           className={
             discount != null
