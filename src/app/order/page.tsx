@@ -28,12 +28,12 @@ function Order() {
             <Avatar src={imgChef.src} size="70" round={true} />
             <p>Sebastian Cuellar</p>
           </div>
-          <Link
+          {/* <Link
             href="https://www.instagram.com/chefsebastiancuellar/"
             className={styles.redesChef}
           >
             <FaInstagram className={styles.iconInstagramChef} size={20} />
-          </Link>
+          </Link> */}
         </div>
       </div>
       <div className={styles.BarSeccion}>

@@ -1,4 +1,41 @@
 .mainInfo {
+    width: 90%;
+    margin-left: 5%;
     min-height: 100vh;
     text-align: center;
+    /* display: flex;
+    flex-direction: column;
+    gap */
+}
+
+.textInfo {
+    margin-bottom: 2em;
+}
+
+.iconRedInsta {
+    cursor: pointer;
+    color: #a4a3a3;
+}
+
+.iconRedInsta:hover {
+    color: #d15555;
+}
+
+.iconRedMail {
+    cursor: pointer;
+    color: #a4a3a3;
+}
+
+.iconRedMail:hover {
+    color: blueviolet;
+}
+
+.boxRedes {
+    display: grid;
+    place-content: center;
+}
+
+.subBoxRedes {
+    display: flex;
+    gap: 10px;
 }
