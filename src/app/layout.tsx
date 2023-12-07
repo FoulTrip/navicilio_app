@@ -1,22 +1,23 @@
-import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
-import './globals.css'
-
-const inter = Inter({ subsets: ['latin'] })
+import type { Metadata } from "next";
+import "./globals.css";
+import { Analytics } from "@vercel/analytics/react";
 
 export const metadata: Metadata = {
-  title: 'NaviCilio',
-  description: 'Development by TripCode',
-}
+  title: "NaviCilio",
+  description: "Development by TripCode",
+};
 
 export default function RootLayout({
   children,
 }: {
-  children: React.ReactNode
+  children: React.ReactNode;
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body>
+        {children}
+        <Analytics />
+      </body>
     </html>
-  )
+  );
 }
