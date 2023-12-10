@@ -12,6 +12,7 @@ import { IoIosArrowRoundForward } from "react-icons/io";
 import { GiChefToque } from "react-icons/gi";
 import { BsFillHouseFill } from "react-icons/bs";
 import { AiFillStar } from "react-icons/ai";
+import { HiOutlineTruck } from "react-icons/hi";
 import { useRouter } from "next/navigation";
 import iconChefMes from "@/assets/sombrero-de-cocinero.png";
 import imgChef from "@/assets/imgChef.jpg";
@@ -83,7 +84,7 @@ function HomePage() {
                 <div className={styles.subBtnOrder}>
                   <p>Ordenar</p>
                   <div className={styles.iconBtnOrder}>
-                    <IoIosArrowRoundForward />
+                    <HiOutlineTruck size={20} />
                   </div>
                 </div>
               </div>

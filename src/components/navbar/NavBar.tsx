@@ -25,7 +25,7 @@ function NavBar() {
           <p>Siguenos</p>
           <Link
             className={styles.linkSocial}
-            href=""
+            href="https://www.instagram.com/navicilio/"
           >
             <FaInstagram size={20} />
           </Link>
