@@ -20,7 +20,6 @@ import Avatar from "react-avatar";
 import AutoSliderLeft from "@/components/slides-auto/Slide";
 import Footer from "@/components/footer";
 import NavBar from "@/components/navbar/NavBar";
-import Warning from "@/components/bannerWarning/Warning";
 
 import { useMediaQuery } from "react-responsive";
 
@@ -29,7 +28,6 @@ function HomePage() {
   const imgTrans = useMediaQuery({ query: "(min-width: 800px)" });
   return (
     <>
-      <Warning />
       <NavBar />
       <main className={styles.heroin_section}>
         <div className={styles.boxInfo}>
